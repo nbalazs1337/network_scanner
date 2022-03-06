@@ -14,6 +14,8 @@
 **ARP** stands for **Address Resolution Protocol** and is a communication protocol used for discovering the link layer address, such as a MAC address, associated with a given internet layer address, an IPv4 address.
 Using the ARP protocol, I can easily link MAC addresses to IP addresses.
 For example, device A will send the broacast to all the clients on the network saying "who has <a specific IP address>", this packet is going to be directed to the broadcast MAC address.
+  
+![Image](18.png)
 
 All the devices will ignore the packet except for the one with the specific IP address.
 This device will send an ARP response with a confirmation about the broadcast address and the MAC address.
@@ -73,8 +75,10 @@ If I have a packet object, I need to use  ```.show() ``` to see all the field wi
 ![Image](photo11.png)
  ```psrc -> clients IP address, source ip that the packet was sent from ```
   
- ```hwsrc ->the hardware source, the MAC address of the client that send the packet back to us ```
+  ```hwsrc ->the hardware source, the MAC address of the client that send the packet back to us ```
 
 #### 4 Print result
 
 Trying to implement the "Net Discover" way of showing the MAC and IP(responses)
+  
+![Image](17.png)
