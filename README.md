@@ -72,6 +72,7 @@ The answered list contains a smaller list, a couple(packet sent, aswer)
 If I have a packet object, I need to use  ```.show() ``` to see all the field withing that packet.
 ![Image](photo11.png)
  ```psrc -> clients IP address, source ip that the packet was sent from ```
+  
  ```hwsrc ->the hardware source, the MAC address of the client that send the packet back to us ```
 
 #### 4 Print result
