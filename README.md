@@ -10,7 +10,7 @@
 3. Parse the response
 4. Print result
 
-#### 1 Create an ARP request
+#### 1 -> Create an ARP request
 **ARP** stands for **Address Resolution Protocol** and is a communication protocol used for discovering the link layer address, such as a MAC address, associated with a given internet layer address, an IPv4 address.
 Using the ARP protocol, I can easily link MAC addresses to IP addresses.
 For example, device A will send the broacast to all the clients on the network saying "who has <a specific IP address>", this packet is going to be directed to the broadcast MAC address.
@@ -46,7 +46,7 @@ arp_request_broadcast = broadcast/arp_request
 
   
   
-  #### 2  Send packet and receive response
+  #### 2 -> Send packet and receive response
 
 I used the ```.srp()  ``` function, is going to send-receive packets with a custom ether part.
 The return value is  a couple of two lists(2 values, 2 variables).
@@ -60,7 +60,7 @@ The first part is the request that we sent, in the second is the response from t
  
 
 
-#### 3 Parse the response
+#### 3 -> Parse the response
 
 
 I want to be able to do something else with the information, to use the MAC address to do further attacks, to be able to access the MAC address variable.
@@ -77,7 +77,7 @@ If I have a packet object, I need to use  ```.show() ``` to see all the field wi
   
   ```hwsrc ->the hardware source, the MAC address of the client that send the packet back to us ```
 
-#### 4 Print result
+#### 4 -> Print result
 
 Trying to implement the "Net Discover" way of showing the MAC and IP(responses)
   
