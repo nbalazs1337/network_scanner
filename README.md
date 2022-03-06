@@ -10,7 +10,7 @@
 3. Parse the response
 4. Print result
 
-#### 1
+#### 1 Create an ARP request
 **ARP** stands for **Address Resolution Protocol** and is a communication protocol used for discovering the link layer address, such as a MAC address, associated with a given internet layer address, an IPv4 address.
 Using the ARP protocol, I can easily link MAC addresses to IP addresses.
 For example, device A will send the broacast to all the clients on the network saying "who has <a specific IP address>", this packet is going to be directed to the broadcast MAC address.
